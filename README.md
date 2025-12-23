@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# NexoSmart -- Portfolio extendido
+Este es el repositorio del proyecto del portfolio extendido de NexoSmart. Su principal objetivo es permitir la fácil creación y edición de los proyectos mostrados en el portfolio de la empresa, buscando reducir al máximo el trabajo futuro que el mismo demanda.
 
-First, run the development server:
+## Instalación
+Se clona el repositorio con `git clone (link repo)`, y luego se instalan las dependencias con `npm install`. Finalmente, se corre localmente con `npm run dev`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionamiento principal
+Dentro del directorio *./src/projects*, encontraremos un directorio específico para cada proyecto. En él, se encuentran dos tipos de archivos: un **index.json**, y uno o más **.mdx**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En el **index.json** se establece la definición principal de los bloques que se mostrarán. Cada bloque tiene parámetros que se pueden pasar, algunos opcionales, y otros requeridos. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Algunos bloques utilizan archivos **.mdx**, los cuales se usan para proveer rich format text, o texto con formato libre. Esto significa que se pueden usar todas las features que provee el formato **Markdown (.md)** por default, y extenderlo con algunos otros formatos personalizables (más sobre esto abajo). 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Los recursos del proyecto (imágenes, videos, íconos, etc.), irán dentro del directorio *./src/public*, en un directorio específico de cada proyecto. Luego, se deben referenciar dentro del archivo **index.json** del mismo. 
 
-## Learn More
+A la hora de definir secciones dentro de un **index.json**, es importante saber que cada sección se define mediante un atributo *type*, cuyo valor será igual al prefijo de cada componente. Suena complejo, pero si quiero usar el componente "OverviewSection", entonces el *type* será "overview"; si quiero usar el componente "ItemsBannerSection", el *type* será "itemsBanner", etc. 
 
-To learn more about Next.js, take a look at the following resources:
+Dentro de cada componente, al inicio, se pueden ver los parámetros disponibles para pasar, y si son requeridos u opcionales.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Funcionamiento interno
+Dentro del directorio *./src/components/projects*, se encuentran los componentes principales del portfolio extendido. Podemos definir tres archivos principales:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ 1. **mdx-content.tsx**: se encarga de renderizar correctamente los archivos **.mdx**. En este archivo, dentro del objeto *components*, se pueden definir componentes para utilizar dentro de cada **.mdx**.
+ 2. **ProjectRenderer.tsx**: se encarga de renderizar las secciones, no es necesario modificarlo.
+ 3. **sections.tsx**: se encarga de definir las secciones que se pueden utilizar dentro de un **index.json**. Si se crea una nueva sección, debe añadirse al objeto "SECTION_COMPONENTS".
 
-## Deploy on Vercel
+Finalmente, en el subdirectorio "sections", podemos entrar a cada sección como un componente individual. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conclusión y cosas a tener en cuenta
+La idea principal de este proyecto, es facilitar el manejo de los proyectos mostrados en el portfolio de la empresa, incluso permitiendo que no haga falta meterse a tocar código para añadir o editar proyectos. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cualquier sección que se creé nueva o se edite, debe mantener dos principios obligatorios: ser responsive, y ser escalable. Se requiere un énfasis especial en escalable, buscando que sea coherente para su uso dentro de todos los proyectos que puedan utilizarlo. 

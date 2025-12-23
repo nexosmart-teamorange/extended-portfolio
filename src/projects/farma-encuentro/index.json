@@ -1,0 +1,170 @@
+{
+    "title": "Farma Encuentro",
+    "description": "Farma Encuentro es tu farmacia online en la ciudad de Bahía Blanca.",
+    "accent": "210 100% 30%",
+    "tags": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind"
+    ],
+    "sections": [
+        {
+            "type": "hero",
+            "title": "Farma Encuentro",
+            "mdx": "hero.mdx",
+            "backgroundImg": "/projects/farma-encuentro/background.png",
+            "client": "/projects/farma-encuentro/logo.png",
+            "year": "2023",
+            "items": [
+                {
+                    "bullet": "Usuarios Mensuales",
+                    "element": "+43K"
+                },
+                {
+                    "bullet": "Farmacias Activas",
+                    "element": "+20"
+                },
+                {
+                    "bullet": "Vistas en Redes",
+                    "element": "+1.5M"
+                }
+            ]
+        },
+        {
+            "type": "overview",
+            "title": "El Desafío",
+            "image": "/projects/farma-encuentro/overview.png",
+            "imageWidth": 600,
+            "mdx": "overview.mdx",
+            "items": [
+                {
+                    "icon": "badge-check",
+                    "element": "Integrar inventarios en tiempo real de múltiples farmacias"
+                },
+                {
+                    "icon": "badge-check",
+                    "element": "Garantizar la seguridad en transacciones de productos regulados"
+                },
+                {
+                    "icon": "badge-check",
+                    "element": "Crear una experiencia móvil intuitiva para usuarios de todas las edades"
+                },
+                {
+                    "icon": "badge-check",
+                    "element": "Implementar un sistema de geolocalización preciso para entregas"
+                }
+            ]
+        },
+        {
+            "type": "objectives",
+            "items": [
+                {
+                    "bullet": "Accesibilidad",
+                    "element": "Facilitar el acceso a medicamentos para todos"
+                },
+                {
+                    "bullet": "Transparencia",
+                    "element": "Comparación clara de precios y disponibilidad"
+                },
+                {
+                    "bullet": "Conveniencia",
+                    "element": "Pedidos rápidos con entrega a domicilio"
+                }
+            ]
+        },
+        {
+            "type": "solution",
+            "icon": "/projects/farma-encuentro/solution.png"
+        },
+        {
+            "type": "itemsBanner",
+            "title": "Metodología ágil.\n Resultados reales.",
+            "image": "/projects/club-olimpo/items-banner.png",
+            "items": [
+                {
+                    "icon": "timer-off",
+                    "bullet": "Procesos Lentos",
+                    "element": "Pagos presenciales y sin control centralizado"
+                },
+                {
+                    "icon": "scan-text",
+                    "bullet": "Falta de Transparencia",
+                    "element": "Sin trazabilidad ni control de información"
+                },
+                {
+                    "icon": "blend",
+                    "bullet": "Comunicación Dispersa",
+                    "element": "Falta de canales unificados con socios"
+                },
+                {
+                    "icon": "monitor-cog",
+                    "bullet": "Sistemas Antiguos",
+                    "element": "Tecnología obsoleta y propensa a fallas"
+                }
+            ]
+        },
+        {
+            "type": "summary",
+            "mdx": "summary.mdx",
+            "features": [
+                {
+                    "bullet": "15.000+",
+                    "element": "Socios conectados"
+                },
+                {
+                    "bullet": "80%",
+                    "element": "de automatización"
+                }
+            ],
+            "results": [
+                "Onboarding digital simplificado",
+                "Incremento en la asistencia a eventos",
+                "Transparencia financiera total",
+                "Reducción de reclamos internos",
+                "Rebranding digital completo",
+                "Experiencia de usuario mejorada"
+            ]
+        },
+        {
+            "type": "tech",
+            "title": "Tecnologías aplicadas",
+            "mdx": "tech.mdx",
+            "image": "/projects/club-olimpo/tech-banner.png",
+            "items": [
+                {
+                    "bullet": "Frontend",
+                    "element": "Interfaz desarrollada en React con componentes dinámicos y experiencia responsiva optimizada con TailwindCSS."
+                },
+                {
+                    "bullet": "Backend",
+                    "element": "Arquitectura Node.js + Laravel para escalabilidad, integraciones API y seguridad de datos."
+                },
+                {
+                    "bullet": "Base de datos",
+                    "element": "MySQL centraliza la información de socios, pagos, inscripciones y estadísticas."
+                },
+                {
+                    "bullet": "Integraciones",
+                    "element": "APIs personalizadas para autenticación, pagos digitales y control de accesos mediante QR."
+                }
+            ],
+            "logos": [
+                "/react.png",
+                "/nodejs.png",
+                "/laravel.png",
+                "/javascript.png",
+                "/mysql.png"
+            ]
+        },
+        {
+            "type": "review",
+            "title": "Lo que dicen nuestros\nclientes",
+            "stars": 5,
+            "quote": "La nueva plataforma nos permitió profesionalizar la gestión, mejorar la experiencia de nuestros socios y optimizar el trabajo diario de todo el equipo. Hoy tenemos una herramienta moderna, rápida y segura.",
+            "author": "— Dirección Administrativa, Club Olimpo Bahía Blanca"
+        },
+        {
+            "type": "discuss"
+        }
+    ]
+}

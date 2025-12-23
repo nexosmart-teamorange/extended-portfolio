@@ -1,0 +1,206 @@
+{
+  "title": "Club Olimpo Platforma",
+  "description": "El portal web del club más grande de Bahía Blanca.",
+  "accent": "0, 0%, 0%",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "Tailwind"
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Club Olimpo",
+      "mdx": "hero.mdx",
+      "backgroundImg": "/projects/club-olimpo/background.png",
+      "client": "/projects/club-olimpo/logo.png",
+      "year": "2023",
+      "items": [
+        {
+          "bullet": "Socios Activos",
+          "element": "15.000+"
+        },
+        {
+          "bullet": "Automatización",
+          "element": "80%"
+        },
+        {
+          "bullet": "Digital",
+          "element": "100%"
+        },
+        {
+          "bullet": "Años de Historia",
+          "element": "113+"
+        }
+      ]
+    },
+    {
+      "type": "overview",
+      "title": "Modernizar un gigante deportivo sin perder su esencia.",
+      "image": "/projects/club-olimpo/olimpo-mock-1.png",
+      "mdx": "overview.mdx",
+      "items": [
+        {
+          "icon": "timer-off",
+          "bullet": "Procesos Lentos",
+          "element": "Pagos presenciales y sin control centralizado"
+        },
+        {
+          "icon": "scan-text",
+          "bullet": "Falta de Transparencia",
+          "element": "Sin trazabilidad ni control de información"
+        },
+        {
+          "icon": "blend",
+          "bullet": "Comunicación Dispersa",
+          "element": "Falta de canales unificados con socios"
+        },
+        {
+          "icon": "monitor-cog",
+          "bullet": "Sistemas Antiguos",
+          "element": "Tecnología obsoleta y propensa a fallas"
+        }
+      ]
+    },
+    {
+      "type": "challenges"
+    },
+    {
+      "type": "ecosystem",
+      "mdx": "ecosystem.mdx",
+      "description": "NexoSmart diseñó una solución integral que unifica la gestión institucional, la relación con socios y la operación del club en un solo entorno digital:",
+      "achievements": [
+        {
+          "bullet": "Automatizá tareas",
+          "element": "Ganá tiempo operativo"
+        },
+        {
+          "bullet": "Automatizá tareas",
+          "element": "Ganá tiempo operativo"
+        },
+        {
+          "bullet": "Automatizá tareas",
+          "element": "Ganá tiempo operativo"
+        },
+        {
+          "bullet": "Automatizá tareas",
+          "element": "Ganá tiempo operativo"
+        },
+        {
+          "bullet": "Automatizá tareas",
+          "element": "Ganá tiempo operativo"
+        }
+      ],
+      "mainPoints": [
+        {
+          "bullet": "Sede Virtual",
+          "element": "Gestión de cuotas, actividades y credenciales digitales"
+        },
+        {
+          "bullet": "Portal web oficial",
+          "element": "Vidriera personalizada con toda la información relevante del club"
+        },
+        {
+          "bullet": "CMS personalizado",
+          "element": "Herramienta interna permitiendo fácil administración de contenido digital"
+        },
+        {
+          "bullet": "Entradas digitales",
+          "element": "Sistema de entradas con QR para eventos y partidos"
+        }
+      ]
+    },
+    {
+      "type": "singleTestimonial",
+      "title": "Una nueva experiencia para los socios",
+      "mdx": "single-testimonial.mdx",
+      "testimonial": "Antes teníamos que ir al club para todo. Ahora puedo pagar la cuota y entrar al estadio sólo mostrando el QR en mi celular.",
+      "author": "— Socio N°8421, Club Olimpo",
+      "image": "/projects/club-olimpo/olimpo-mock-2.png"
+    },
+    {
+      "type": "itemsBanner",
+      "title": "Metodología ágil.\n Resultados reales.",
+      "image": "/projects/club-olimpo/items-banner.png",
+      "items": [
+        {
+          "icon": "timer-off",
+          "bullet": "Procesos Lentos",
+          "element": "Pagos presenciales y sin control centralizado"
+        },
+        {
+          "icon": "scan-text",
+          "bullet": "Falta de Transparencia",
+          "element": "Sin trazabilidad ni control de información"
+        },
+        {
+          "icon": "blend",
+          "bullet": "Comunicación Dispersa",
+          "element": "Falta de canales unificados con socios"
+        },
+        {
+          "icon": "monitor-cog",
+          "bullet": "Sistemas Antiguos",
+          "element": "Tecnología obsoleta y propensa a fallas"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "mdx": "summary.mdx",
+      "features": [
+        {
+          "bullet": "15.000+",
+          "element": "Socios conectados"  
+        },
+        {
+          "bullet": "80%",
+          "element": "de automatización"  
+        }
+      ],
+      "results": [
+        "Onboarding digital simplificado",
+        "Incremento en la asistencia a eventos",
+        "Transparencia financiera total",
+        "Reducción de reclamos internos",
+        "Rebranding digital completo",
+        "Experiencia de usuario mejorada"
+      ]
+    },
+    {
+      "type": "tech",
+      "title": "Tecnologías aplicadas",
+      "mdx": "tech.mdx",
+      "image": "/projects/club-olimpo/tech-banner.png",
+      "items": [
+        {
+          "bullet": "Frontend",
+          "element": "Interfaz desarrollada en React con componentes dinámicos y experiencia responsiva optimizada con TailwindCSS."
+        },
+        {
+          "bullet": "Backend",
+          "element": "Arquitectura Node.js + Laravel para escalabilidad, integraciones API y seguridad de datos."
+        },
+        {
+          "bullet": "Base de datos",
+          "element": "MySQL centraliza la información de socios, pagos, inscripciones y estadísticas."
+        },
+        {
+          "bullet": "Integraciones",
+          "element": "APIs personalizadas para autenticación, pagos digitales y control de accesos mediante QR."
+        }
+      ],
+      "logos": ["/react.png", "/nodejs.png", "/laravel.png", "/javascript.png", "/mysql.png"]
+    },
+    {
+      "type": "review",
+      "title": "Lo que dicen nuestros\nclientes",
+      "stars": 5,
+      "quote": "La nueva plataforma nos permitió profesionalizar la gestión, mejorar la experiencia de nuestros socios y optimizar el trabajo diario de todo el equipo. Hoy tenemos una herramienta moderna, rápida y segura.",
+      "author": "— Dirección Administrativa, Club Olimpo Bahía Blanca"
+    },
+    {
+      "type": "discuss"
+    }
+  ]
+}
