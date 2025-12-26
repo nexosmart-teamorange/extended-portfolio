@@ -10,7 +10,8 @@ module.exports = {
         max_memory_restart: "2G",
         env: {
           NODE_ENV: "production",
-          PORT: 3003
+          PORT: 3003,
+          NEXT_PUBLIC_BASE_PATH: "/extended-portfolio"
         }
       }
     ]
