@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 type SolutionProps = {
-    icon: string
+    icon: string,
+    images?: string[]
 }
 
 export const SolutionSection = (props: SolutionProps) => {
-    const { icon } = props
-    
+    const { icon, images } = props
+
     return (
         <div className="bg-gray-50 flex flex-col items-center justify-center p-6 md:p-12 overflow-hidden font-grotesk">
             {/* Title - positioned to go slightly behind the top card */}
-            <h1 className="text-5xl md:text-7xl lg:text-9xl text-blue-900 lg:-mb-4 relative z-0">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl text-accent lg:-mb-4 relative z-0">
                 La solución
             </h1>
 
@@ -37,34 +38,67 @@ export const SolutionSection = (props: SolutionProps) => {
 
                     {/* Portal responsive - Top */}
                     <div className="md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 z-20">
-                        <div className="bg-white/50 backdrop-blur-xs rounded-4xl p-6 md:py-8 lg:py-10 border border-gray-300 max-w-xs mx-auto md:mx-0">
-                            <h3 className="font-medium text-accent">Portal responsive</h3>
+                        <div className={`flex flex-row gap-x-4 bg-white/50 backdrop-blur-xs rounded-4xl p-6 md:py-8 ${images ? 'lg:py-6' : 'lg:py-10'} border border-gray-300 max-w-xs mx-auto md:mx-0`}>
+                            {images &&
+                                <Image
+                                    src={images[0]}
+                                    className="w-16 h-auto object-contain shrink-0 hidden lg:flex"
+                                    width={110}
+                                    height={110}
+                                    alt='solution-item-1'
+                                />}
 
-                            <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
-                                con catálogo completo, comparador de precios en tiempo real y checkout optimizado.
-                            </p>
+                            <div className="flex flex-col">
+                                <h3 className="font-medium text-accent">Portal responsive</h3>
+
+                                <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
+                                    con catálogo completo, comparador de precios en tiempo real y checkout optimizado.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* Aplicación iOS y Android - Left */}
                     <div className="md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2 z-20">
-                        <div className="bg-white/80 backdrop-blur-md rounded-4xl p-6 md:py-8 lg:py-10 border border-gray-300 max-w-xs mx-auto md:mx-0">
-                            <h3 className="font-medium text-accent">Aplicación iOS y Android</h3>
+                        <div className={`flex flex-row gap-x-4 bg-white/50 backdrop-blur-xs rounded-4xl p-6 md:py-8 ${images ? 'lg:py-6' : 'lg:py-10'} border border-gray-300 max-w-xs mx-auto md:mx-0`}>
+                            {images &&
+                                <Image
+                                    src={images[1]}
+                                    className="w-16 h-auto object-contain shrink-0 hidden lg:flex"
+                                    width={110}
+                                    height={110}
+                                    alt='solution-item-2'
+                                />}
 
-                            <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
-                                con búsqueda inteligente, geolocalización y notificaciones push para ofertas personalizadas.
-                            </p>
+                            <div className="flex flex-col">
+                                <h3 className="font-medium text-accent">Aplicación iOS y Android</h3>
+
+                                <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
+                                    con búsqueda inteligente, geolocalización y notificaciones push para ofertas personalizadas.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* Dashboard - Right */}
                     <div className="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 z-20">
-                        <div className="bg-white/80 backdrop-blur-md rounded-4xl p-6 md:py-8 lg:py-10 border border-gray-300 max-w-xs mx-auto md:mx-0">
-                            <h3 className="font-medium text-accent">Dashboard</h3>
+                        <div className={`flex flex-row gap-x-4 bg-white/50 backdrop-blur-xs rounded-4xl p-6 md:py-8 ${images ? 'lg:py-6' : 'lg:py-10'} border border-gray-300 max-w-xs mx-auto md:mx-0`}>
+                            {images &&
+                                <Image
+                                    src={images[2]}
+                                    className="w-16 h-auto object-contain shrink-0 hidden lg:flex"
+                                    width={110}
+                                    height={110}
+                                    alt='solution-item-3'
+                                />}
 
-                            <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
-                                para gestión de inventario, pedidos y análisis de ventas con sincronización automática.
-                            </p>
+                            <div className="flex flex-col">
+                                <h3 className="font-medium text-accent">Dashboard</h3>
+
+                                <p className="text-sm text-gray-500/90 max-w-[27ch] mt-1">
+                                    para gestión de inventario, pedidos y análisis de ventas con sincronización automática.
+                                </p>
+                            </div>
                         </div>
                     </div>
 

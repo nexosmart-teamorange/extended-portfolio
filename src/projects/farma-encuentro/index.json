@@ -74,55 +74,11 @@
         },
         {
             "type": "solution",
-            "icon": "/projects/farma-encuentro/solution.png"
-        },
-        {
-            "type": "itemsBanner",
-            "title": "Metodología ágil.\n Resultados reales.",
-            "image": "/projects/club-olimpo/items-banner.png",
-            "items": [
-                {
-                    "icon": "timer-off",
-                    "bullet": "Procesos Lentos",
-                    "element": "Pagos presenciales y sin control centralizado"
-                },
-                {
-                    "icon": "scan-text",
-                    "bullet": "Falta de Transparencia",
-                    "element": "Sin trazabilidad ni control de información"
-                },
-                {
-                    "icon": "blend",
-                    "bullet": "Comunicación Dispersa",
-                    "element": "Falta de canales unificados con socios"
-                },
-                {
-                    "icon": "monitor-cog",
-                    "bullet": "Sistemas Antiguos",
-                    "element": "Tecnología obsoleta y propensa a fallas"
-                }
-            ]
-        },
-        {
-            "type": "summary",
-            "mdx": "summary.mdx",
-            "features": [
-                {
-                    "bullet": "15.000+",
-                    "element": "Socios conectados"
-                },
-                {
-                    "bullet": "80%",
-                    "element": "de automatización"
-                }
-            ],
-            "results": [
-                "Onboarding digital simplificado",
-                "Incremento en la asistencia a eventos",
-                "Transparencia financiera total",
-                "Reducción de reclamos internos",
-                "Rebranding digital completo",
-                "Experiencia de usuario mejorada"
+            "icon": "/projects/farma-encuentro/solution.png",
+            "images": [
+                "/projects/farma-encuentro/solution-item-1.png",
+                "/projects/farma-encuentro/solution-item-2.png",
+                "/projects/farma-encuentro/solution-item-3.png"
             ]
         },
         {
@@ -133,7 +89,7 @@
             "items": [
                 {
                     "bullet": "Frontend",
-                    "element": "Interfaz desarrollada en React con componentes dinámicos y experiencia responsiva optimizada con TailwindCSS."
+                    "element": "Web desarrollada en Next.js permitiendo una experiencia dinámica. La aplicación móvil se desarrolló en React Native."
                 },
                 {
                     "bullet": "Backend",
@@ -157,11 +113,102 @@
             ]
         },
         {
+            "type": "userExperience",
+            "image": "/projects/farma-encuentro/user-exp.png",
+            "items": [
+                {
+                    "bullet": "Búsqueda Inteligente",
+                    "element": "Algoritmo de búsqueda con autocompletado, sugerencias y filtro por precio, ubicación y disponibilidad."
+                },
+                {
+                    "bullet": "Comparador de Precios",
+                    "element": "Visualización clara de precios entre farmacias cercanas con información de stock actualizada."
+                },
+                {
+                    "bullet": "Checkout Simplificado",
+                    "element": "Proceso de compra en 3 pasos con múltiples métodos de pago y opciones de entrega flexibles."
+                },
+                {
+                    "bullet": "Recetas Digitales",
+                    "element": "Sistema de carga y validación de recetas médicas con almacenamiento seguro en la nube."
+                }
+            ]
+        },
+        {
+            "type": "results",
+            "primaryColor": "#6F98EF",
+            "secondaryColor": "#003B89",
+            "upperItems": [
+                {
+                    "icon": "chart-no-axes-combined",
+                    "bullet": "+320%",
+                    "element": "Crecimiento en ventas online"
+                },
+                {
+                    "icon": "laugh",
+                    "bullet": "43K+",
+                    "element": "Usuarios activos mensuales"
+                },
+                {
+                    "icon": "square-star",
+                    "bullet": "4.8/5",
+                    "element": "Rating en app stores"
+                },
+                {
+                    "icon": "shopping-basket",
+                    "bullet": "85%",
+                    "element": "Tasa de conversión"
+                }
+            ],
+            "lowerItems": [
+                {
+                    "bullet": "2.3 min",
+                    "subtitle": "Tiempo promedio de compra",
+                    "text": "Reducción del 60% vs. competencia"
+                },
+                {
+                    "bullet": "92%",
+                    "subtitle": "Retención de usuarios",
+                    "text": "Usuarios que vuelven mensualmente"
+                },
+                {
+                    "bullet": "+20",
+                    "subtitle": "Farmacias integradas",
+                    "text": "Red en constante expansión"
+                }
+            ]
+        },
+        {
+            "type": "marketing",
+            "title": "Marketing & \nExpansión Comercial",
+            "description": "Implementamos una estrategia integral de marketing digital que posicionó a FarmaEncuentro como líder del sector.",
+            "image": "/projects/farma-encuentro/marketing.png",
+            "imageWidth": 600,
+            "items": [
+                {
+                    "bullet": "Campaña en Redes Sociales",
+                    "element": "+1.5M de impresiones orgánicas en 6 meses"
+                },
+                {
+                    "bullet": "SEO & Content Marketing",
+                    "element": "Posicionamiento #1 en búsquedas clave del sector"
+                },
+                {
+                    "bullet": "Programa de Referidos",
+                    "element": "35% de nuevos usuarios por recomendación"
+                },
+                {
+                    "bullet": "Email Marketing Automatizado",
+                    "element": "45% de tasa de apertura en campañas personalizadas"
+                }
+            ]
+        },
+        {
             "type": "review",
-            "title": "Lo que dicen nuestros\nclientes",
+            "background": true,
             "stars": 5,
-            "quote": "La nueva plataforma nos permitió profesionalizar la gestión, mejorar la experiencia de nuestros socios y optimizar el trabajo diario de todo el equipo. Hoy tenemos una herramienta moderna, rápida y segura.",
-            "author": "— Dirección Administrativa, Club Olimpo Bahía Blanca"
+            "quote": "NexoSmart transformó completamente nuestra visión. La plataforma superó todas nuestras expectativas y nos posicionó como líderes en el mercado digital farmacéutico.",
+            "author": "— Martín Parra, CEO de Reaquila"
         },
         {
             "type": "discuss"
